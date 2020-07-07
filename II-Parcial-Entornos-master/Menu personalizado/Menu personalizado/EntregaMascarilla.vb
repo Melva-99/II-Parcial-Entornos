@@ -126,4 +126,9 @@ Public Class EntregaBolsaSolidaria
         chkBasica.Enabled = False
         chkRegular.Enabled = False
     End Sub
+
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        MenuPrincipal.Show()
+        Me.Hide()
+    End Sub
 End Class

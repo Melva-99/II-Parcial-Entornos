@@ -46,6 +46,7 @@ Partial Class Estudiante
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dtgRegistros, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -78,6 +79,7 @@ Partial Class Estudiante
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox2.Controls.Add(Me.btnBuscar)
         Me.GroupBox2.Controls.Add(Me.btnLimpiar)
         Me.GroupBox2.Controls.Add(Me.btnSalir)
@@ -155,6 +157,7 @@ Partial Class Estudiante
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox1.Controls.Add(Me.cmbCodigoClase)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtCodigo)
@@ -310,11 +313,21 @@ Partial Class Estudiante
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre"
         '
+        'btnRegresar
+        '
+        Me.btnRegresar.Location = New System.Drawing.Point(525, 344)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegresar.TabIndex = 9
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = True
+        '
         'Estudiante
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(612, 358)
+        Me.ClientSize = New System.Drawing.Size(612, 379)
+        Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -353,4 +366,5 @@ Partial Class Estudiante
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents btnRegresar As Button
 End Class

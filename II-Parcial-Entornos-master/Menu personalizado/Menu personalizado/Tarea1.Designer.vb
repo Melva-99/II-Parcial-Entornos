@@ -54,6 +54,7 @@ Partial Class Tarea1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.datainf, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,7 +68,7 @@ Partial Class Tarea1
         '
         'brnSalir
         '
-        Me.brnSalir.Location = New System.Drawing.Point(505, 200)
+        Me.brnSalir.Location = New System.Drawing.Point(442, 183)
         Me.brnSalir.Margin = New System.Windows.Forms.Padding(2)
         Me.brnSalir.Name = "brnSalir"
         Me.brnSalir.Size = New System.Drawing.Size(56, 25)
@@ -77,16 +78,17 @@ Partial Class Tarea1
         '
         'btnLimpiarV
         '
-        Me.btnLimpiarV.Location = New System.Drawing.Point(505, 147)
+        Me.btnLimpiarV.Location = New System.Drawing.Point(407, 147)
         Me.btnLimpiarV.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLimpiarV.Name = "btnLimpiarV"
-        Me.btnLimpiarV.Size = New System.Drawing.Size(56, 42)
+        Me.btnLimpiarV.Size = New System.Drawing.Size(120, 29)
         Me.btnLimpiarV.TabIndex = 8
         Me.btnLimpiarV.Text = "Limpiar ventana"
         Me.btnLimpiarV.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox3.Controls.Add(Me.datainf)
         Me.GroupBox3.Controls.Add(Me.mtID)
         Me.GroupBox3.Controls.Add(Me.btnBuscar)
@@ -98,7 +100,7 @@ Partial Class Tarea1
         Me.GroupBox3.Size = New System.Drawing.Size(535, 288)
         Me.GroupBox3.TabIndex = 7
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Información del cliente"
+        Me.GroupBox3.Text = "Historial"
         '
         'datainf
         '
@@ -141,13 +143,14 @@ Partial Class Tarea1
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox2.Controls.Add(Me.btnDepositar)
         Me.GroupBox2.Controls.Add(Me.btnRetirar)
         Me.GroupBox2.Controls.Add(Me.txtMontoT)
         Me.GroupBox2.Controls.Add(Me.txtCliente)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(343, 11)
+        Me.GroupBox2.Location = New System.Drawing.Point(364, 17)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
@@ -214,6 +217,7 @@ Partial Class Tarea1
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox1.Controls.Add(Me.btnLimpiarR)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.txtMonto)
@@ -365,11 +369,22 @@ Partial Class Tarea1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre completo"
         '
+        'btnRegresar
+        '
+        Me.btnRegresar.Location = New System.Drawing.Point(8, 523)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegresar.TabIndex = 10
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = True
+        '
         'Tarea1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(594, 538)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(588, 569)
+        Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.brnSalir)
         Me.Controls.Add(Me.btnLimpiarV)
         Me.Controls.Add(Me.GroupBox3)
@@ -420,4 +435,5 @@ Partial Class Tarea1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnRegresar As Button
 End Class

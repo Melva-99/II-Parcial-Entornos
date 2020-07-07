@@ -46,4 +46,19 @@ Public Class MenuPrincipal
         frmLibretaAhorro.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Estudiante.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnAperturar_Click(sender As Object, e As EventArgs) Handles btnAperturar.Click
+        Tarea1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnBolsa_Click(sender As Object, e As EventArgs) Handles btnBolsa.Click
+        EntregaBolsaSolidaria.Show()
+        Me.Hide()
+    End Sub
 End Class

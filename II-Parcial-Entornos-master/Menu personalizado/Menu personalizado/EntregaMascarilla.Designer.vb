@@ -54,6 +54,7 @@ Partial Class EntregaBolsaSolidaria
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnRegresar = New System.Windows.Forms.Button()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGReporte, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -365,11 +366,21 @@ Partial Class EntregaBolsaSolidaria
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID:"
         '
+        'btnRegresar
+        '
+        Me.btnRegresar.Location = New System.Drawing.Point(12, 433)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegresar.TabIndex = 8
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = True
+        '
         'EntregaBolsaSolidaria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(944, 436)
+        Me.ClientSize = New System.Drawing.Size(944, 468)
+        Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.GroupBox2)
@@ -415,4 +426,5 @@ Partial Class EntregaBolsaSolidaria
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents btnRegresar As Button
 End Class

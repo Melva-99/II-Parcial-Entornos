@@ -82,4 +82,9 @@
         cmbSexo.Text = dtgRegistros.Rows(FilaActual).Cells(5).Value
         cmbCodigoClase.Text = dtgRegistros.Rows(FilaActual).Cells(6).Value
     End Sub
+
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        MenuPrincipal.Show()
+        Me.Hide()
+    End Sub
 End Class
